@@ -25,15 +25,21 @@ mv /tmp/file.txt /home/reda/file.txt
 
 This is a simple version of Unix mv program that supports only moving files to an explicit destination as in the examples.
 
-## Important notes:
+# Simple Unix Utilities in C
 
-1. Check on the return values of the system calls / library routines you will use.
+This repository implements simple versions of some classic Unix commands:
 
-2. Each utility is a separate program / separate c file.
+- `pwd`: print working directory
+- `echo`: print user input to standard output
+- `cp`: copy a file to a new location
+- `mv`: move/rename a file
 
-3. Ensure you match the Unix specs while implementing your utility (you can learn from the     
-   behavior of the original utilities on your Linux machine).
+## Compilation
 
-4. Upload your code to your github (DO NOT upload the generated object files or executables).
+Each utility is a separate program. Compile them using `gcc`:
 
-5. Please include an organized README file that describe your repository, the compilation command(s) you used, and example of the output.
+```bash
+gcc pwd.c -o pwd
+gcc echo.c -o echo
+gcc cp.c -o cp
+gcc mv.c -o mv
