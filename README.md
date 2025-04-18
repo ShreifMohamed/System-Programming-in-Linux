@@ -8,20 +8,20 @@ Implement the following simple Unix utilities:
 
 3. **cp:** create a copy from a given source file to a given destination. For example,
 
-''' bash
+``` bash
 cp file.txt /tmp/file_copy.txt
-'''
+```
 This is a simple version of Unix cp program that supports only copying a file to an explicit destination as in the example.
 
 4. **mv:** move a file to another place (might be with different name). For example,
 
-''' shell 
+``` shell 
 mv /tmp/file.txt /tmp/new_name.txt
 
 mv /tmp/file.txt /home/reda/new_name.txt
 
 mv /tmp/file.txt /home/reda/file.txt
-'''
+```
 
 This is a simple version of Unix mv program that supports only moving files to an explicit destination as in the examples.
 
